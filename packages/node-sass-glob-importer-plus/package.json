@@ -1,6 +1,6 @@
 {
-  "name": "node-sass-glob-importer",
-  "description": "Custom importer for node-sass which makes it possible to use glob syntax in Sass import statements",
+  "name": "node-sass-glob-importer-plus",
+  "description": "Like node-sass-glob-importer except also parses vaguer paths without the .scss or .sass extension (like vendors/**/*)",
   "keywords": [
     "glob-importer",
     "importer",
@@ -9,7 +9,8 @@
   ],
   "version": "5.3.2",
   "author": "Markus Oberlehner",
-  "homepage": "https://github.com/maoberlehner/node-sass-magic-importer/tree/master/packages/node-sass-glob-importer",
+  "contributors": ["Alex Tsirozidis"],
+  "homepage": "https://github.com/Firebrand/node-sass-magic-importer",
   "license": "MIT",
   "scripts": {
     "build": "npm run clean && tsc",
@@ -20,10 +21,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maoberlehner/node-sass-magic-importer"
+    "url": "https://github.com/Firebrand/node-sass-magic-importer"
   },
   "bugs": {
-    "url": "https://github.com/maoberlehner/node-sass-magic-importer/issues"
+    "url": "https://github.com/Firebrand/node-sass-magic-importer/issues"
   },
   "dependencies": {
     "node-sass-magic-importer": "^5.3.2"

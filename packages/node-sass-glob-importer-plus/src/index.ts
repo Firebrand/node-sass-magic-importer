@@ -15,7 +15,7 @@ export = function globImporter() {
 
     if (filePaths) {
       const contents = filePaths
-        .map((x: string) => `@import '${x}';`)
+        .map((x: string) => x.match(/\.s[ac]ss$/i) ? `@import '${x}';` : ``)
         .join(`\n`);
 
       return { contents };
